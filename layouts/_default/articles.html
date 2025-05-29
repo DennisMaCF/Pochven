@@ -5,7 +5,7 @@
       <li>
         {{ with .Params.categories }}
             {{ range . }}
-              <a href="/categories/{{ . | urlize }}/" class="category-link">[{{ . }}]</a>
+              <a href="{{ "/categories/" | relURL }}{{ . | urlize }}/" class="category-link">[{{ . }}]</a>
             {{ end }}
           {{ end }}
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
