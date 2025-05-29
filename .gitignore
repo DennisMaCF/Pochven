@@ -1,0 +1,17 @@
+# Hugo build output
+/public/
+resources/_gen/
+
+# 系統相關
+.DS_Store
+Thumbs.db
+
+# IDE/Editor 設定
+.vscode/
+.idea/
+
+# Hugo module / dependency cache
+.hugo_build.lock
+
+# Hugo deploy config
+.netlify/

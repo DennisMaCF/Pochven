@@ -1,0 +1,120 @@
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+  }
+
+  .container { 
+    max-width: 960px;
+    min-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    background-color: #2c2c2c;
+  }
+
+  header {
+    background-color: #2a2a2a;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+
+  nav {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  nav a {
+    color: #fff;
+    margin: 0 0.7rem;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: #80b3ff;
+    text-decoration: underline;
+  }
+
+  main {
+    flex: 1;
+    background-color: #2c2c2c;
+    margin: 2rem auto 3rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    margin-bottom: 100px;
+  }
+
+  h1, h2, h3 {
+    color: #fff;
+  }
+
+  a {
+    color: #80b3ff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  li a {
+    font-size: 1.2rem;
+  }
+
+  .category-link {
+  color: #d98041; /* 橘黃色 */
+  font-weight: bold;
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+
+.category-link:hover {
+  text-decoration: underline;
+  color: #bdce4e; /* 淺一點的橘色 */
+}
+
+blockquote {
+  border-left: 4px solid #666;         /* 簡單黑灰色邊線 */
+  padding-left: 1rem;                  /* 左縮排 */
+  margin: 1rem 0;                      /* 垂直間距 */
+  background: none;                    /* 取消背景色 */
+  color: #ccc;                         /* 字體偏淺灰 */
+  font-style: normal;                 /* 不強制斜體，保留自然語氣 */
+  font-size: 0.95rem;
+}
+
+footer {
+  font-size: 0.85rem;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-top: 1px solid #444;
+  position: fixed;     /* ✅ 固定在螢幕底部 */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;         /* 避免被蓋住 */
+}
+
+  @media (max-width: 600px) {
+    .container {
+      padding: 1rem;
+    }
+    nav {
+      font-size: 0.85rem;
+    }
+    footer {
+      font-size: 0.75rem;
+    }
+  }

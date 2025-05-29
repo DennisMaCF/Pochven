@@ -1,0 +1,24 @@
+{{ define "main" }}
+<main class="container">
+  <h1>Welcome to Pochven!</h1>
+  {{ with .Params.subtitle }}
+    <h2>{{ . }}</h2>
+  {{ end }}
+
+  <hr>
+
+  <h2><a href="/articles/">📖 點我看所有文章</a></h2>
+
+  <hr>
+
+  <h3>📝 近期文章</h3>
+  <ul>
+    {{ range first 6 (where .Site.RegularPages "Section" "posts") }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <small>{{ .Date.Format "2006-01-02" }}</small>
+      </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}
