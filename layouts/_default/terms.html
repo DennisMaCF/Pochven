@@ -1,7 +1,7 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   <ul>
-    {{ range .Data.Terms.Alphabetical }}
+    {{ range .Site.Taxonomies.categories }}
       <li>
         <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }} ({{ .Count }})</a>
       </li>
