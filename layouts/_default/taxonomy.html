@@ -4,6 +4,7 @@
     {{ range .Pages }}
       <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <small>{{ .Date.Format "2006-01-02" }}</small>
       </li>
     {{ end }}
   </ul>
