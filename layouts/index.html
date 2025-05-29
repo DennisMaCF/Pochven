@@ -15,12 +15,13 @@
     {{ range first 6 (where .Site.RegularPages "Section" "posts") }}
       <li>
         {{ with .Params.categories }}
-            {{ range . }}
-              <a href="{{ "/categories/" | relURL }}{{ . | urlize }}/" class="category-link">[{{ . }}]</a>
-            {{ end }}
+          {{ range . }}
+            <a href="{{ "/categories/" | relURL }}{{ . | urlize }}/" class="category-link">[{{ . }}]</a>
           {{ end }}
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          <small>{{ .Date.Format "2006-01-02" }}</small>
+        {{ end }}
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <small>{{ .Date.Format "2006-01-02" }}</small>
+      </li>
     {{ end }}
   </ul>
 {{ end }}
