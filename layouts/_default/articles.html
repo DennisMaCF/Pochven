@@ -1,5 +1,4 @@
 {{ define "main" }}
-<main class="container">
   <h1>{{ .Title }}</h1>
   <ul>
     {{ range (where .Site.RegularPages "Section" "posts") }}
@@ -13,5 +12,4 @@
           <small>{{ .Date.Format "2006-01-02" }}</small>
     {{ end }}
   </ul>
-</main>
 {{ end }}

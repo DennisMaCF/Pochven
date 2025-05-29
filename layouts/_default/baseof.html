@@ -14,11 +14,9 @@
 <body>
   {{ partial "header.html" . }}
 
-  <main class="container">
+  <main>
     {{ block "main" . }}{{ end }}
   </main>
-
-  {{ partial "footer.html" . }}
 
   {{ block "extra_js" . }}{{ end }}
 </body>

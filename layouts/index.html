@@ -1,13 +1,12 @@
 {{ define "main" }}
-<main class="container">
-  <h1>Welcome to Pochven!</h1>
+  <h1>{{ .Title }}</h1>
   {{ with .Params.subtitle }}
     <h2>{{ . }}</h2>
   {{ end }}
 
   <hr>
 
-  <h2><a href="/articles/">📖 點我看所有文章</a></h2>
+  <h3><a href="/articles/">📖 點我看所有文章</a></h3>
 
   <hr>
 
@@ -15,10 +14,12 @@
   <ul>
     {{ range first 6 (where .Site.RegularPages "Section" "posts") }}
       <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <a href="{{ .RelPermalink }}">
+          <span class="category-link">[{{ index .Params.categories 0 }}]</span>
+          {{ .Title }}
+        </a>
         <small>{{ .Date.Format "2006-01-02" }}</small>
       </li>
     {{ end }}
   </ul>
-</main>
 {{ end }}

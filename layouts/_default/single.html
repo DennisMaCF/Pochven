@@ -1,15 +1,23 @@
 {{ define "main" }}
-<main class="post">
-  <h1>{{ .Title }}</h1>
-  <p>
-    <small>
-      🗓 發佈日期：{{ .Date.Format "2006-01-02" }} |
-      📂 分類：{{ range .Params.categories }}<a href="/categories/{{ . | urlize }}">{{ . }}</a> {{ end }} |
-      🏷 標籤：{{ range .Params.tags }}<a href="/tags/{{ . | urlize }}">{{ . }}</a> {{ end }}
-    </small>
-  </p>
-  <div class="content">
-    {{ .Content }}
-  </div>
-</main>
+<h1>{{ .Title }}</h1>
+<p>
+  <small>
+    🗓 發佈日期：{{ .Date.Format "2006-01-02" }} |
+    📂 分類：
+    {{ range .Params.categories }}
+      <a class="category-link" href="/categories/{{ . | urlize }}">{{ . }}</a>
+    {{ end }} |
+    🏷 標籤：
+    {{ range .Params.tags }}
+      <a class="category-link" href="/tags/{{ . | urlize }}">{{ . }}</a>
+    {{ end }}
+  </small>
+</p>
+
+{{ .Content }}
+<div class="content">
+  {{ .Content }}
+</div>
+
+{{ partial "copyright.html" . }}
 {{ end }}
