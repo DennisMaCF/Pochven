@@ -3,8 +3,14 @@ description = "Pochven—學習與紀錄之旅程的起點"
 author = "DennisMa"
 baseURL = "https://pochven.netlify.app/"
 languageCode = 'zh-tw'
+
 [taxonomies]
   category = "categories"
   tag = "tags"
+
 [params]
   author = "Dennis Ma"
+
+  [params.taxonomyNames]
+    categories = "分類"
+    tags = "TAG"

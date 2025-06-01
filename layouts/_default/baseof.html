@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <script src="https://unpkg.com/instant.page@5.1.0" type="module" defer></script>
+
   <title>{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
 
   {{- $style := resources.Get "css/style.css" | minify | fingerprint -}}
