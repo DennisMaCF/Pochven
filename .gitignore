@@ -15,3 +15,6 @@ Thumbs.db
 
 # Hugo deploy config
 .netlify/
+
+# 草稿資料夾
+_drafts/

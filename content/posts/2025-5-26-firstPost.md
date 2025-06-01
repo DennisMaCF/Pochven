@@ -28,7 +28,7 @@ categories: ["Thoughts"]
 ---
 
 ## 為何叫做Pochven?
-Pochven起源於EVE online 中的一個特殊區域，這個取名創意借鑑了[Halforst's Field|冰霜之地](https://halfrost.com/)  
+Pochven這個名稱來源於遊戲：EVE online 中的一個特殊區域，這個取名創意借鑑了[Halforst's Field|冰霜之地](https://halfrost.com/)  
 命名為Pochven，主要是不想要名稱太normal，變成xxx's blog，希望有點獨特性。  
 
 未來會在這裡發佈我的學習筆記 生活紀錄 還有一些廢話們  
