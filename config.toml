@@ -9,7 +9,7 @@ languageCode = 'zh-tw'
   tag = "tags"
 
 [params]
-  author = "Dennis Ma"
+  authorName = "Dennis Ma"
 
   [params.taxonomyNames]
     categories = "分類"
