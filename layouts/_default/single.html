@@ -14,6 +14,13 @@
   </small>
 </p>
 
+{{ if .TableOfContents }}
+  <aside class="toc">
+    <h3>📋 目錄</h3>
+    {{ .TableOfContents }}
+  </aside>
+{{ end }}
+
 <div class="content">
   {{ .Content }}
 </div>

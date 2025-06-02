@@ -10,6 +10,7 @@ languageCode = 'zh-tw'
 
 [params]
   authorName = "Dennis Ma"
+  toc = true
 
   [params.taxonomyNames]
     categories = "分類"
