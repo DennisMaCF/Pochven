@@ -19,5 +19,36 @@
   </main>
 
   {{ block "extra_js" . }}{{ end }}
+      <!-- 複製程式碼按鈕的 Script -->
+<script>
+document.querySelectorAll('pre code').forEach((codeBlock) => {
+  const pre = codeBlock.parentNode; // 取得父層的 <pre> 元素
+
+  // 只有當父層確實是 <pre> 且尚未有 wrapper 時才繼續處理
+  if (pre.tagName === 'PRE' && !pre.closest('.code-wrapper')) {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'code-wrapper';
+
+    // 將原始的 <pre> 移到新的 wrapper 內部
+    pre.parentNode.insertBefore(wrapper, pre);
+    wrapper.appendChild(pre);
+
+    // 創建按鈕
+    const button = document.createElement('button');
+    button.innerText = '複製';
+    button.className = 'copy-btn';
+
+    button.addEventListener('click', () => {
+      navigator.clipboard.writeText(codeBlock.innerText); // 使用 codeBlock.innerText
+      button.innerText = '✔ 已複製';
+      setTimeout(() => button.innerText = '複製', 2000);
+    });
+
+    // 將按鈕添加到 wrapper 中（與 <pre> 為兄弟元素）
+    wrapper.appendChild(button);
+  }
+});
+</script>
 </body>
 </html>
+

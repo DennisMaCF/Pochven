@@ -1,4 +1,6 @@
 {{ define "main" }}
+<a href="{{ .Site.BaseURL }}" class="back-home">← Home</a>
+
 <h1>{{ .Title }}</h1>
 <p>
   <small>
@@ -23,6 +25,18 @@
 <div class="content">
   {{ .Content }}
 </div>
+
+<nav class="post-nav">
+  {{ with .Prev }}
+    {{ if eq .Type "posts" }}
+      <a href="{{ .RelPermalink }}" class="post-nav-item prev-post">« 上一篇</a>
+    {{ end }}
+  {{ end }}
+
+  {{ with .Next }}
+    <a href="{{ .RelPermalink }}" class="post-nav-item next-post">下一篇 »</a>
+  {{ end }}
+</nav>
 
 {{ partial "copyright.html" . }}
 {{ end }}

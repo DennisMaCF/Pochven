@@ -1,39 +1,41 @@
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: "Helvetica Neue", sans-serif;
-    background-color: #1e1e1e;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    line-height: 1.6;
-  }
+/* === Reset & Global Layout === */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
 
+/* === Header & Navigation === */
+header {
+  background-color: #2a2a2a;
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
 
-  header {
-    background-color: #2a2a2a;
-    text-align: center;
-    padding: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  }
+nav {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
 
-  nav {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-  }
+nav a {
+  color: #fff;
+  margin: 0 0.7rem;
+  text-decoration: none;
+}
 
-  nav a {
-    color: #fff;
-    margin: 0 0.7rem;
-    text-decoration: none;
-  }
+nav a:hover {
+  color: #80b3ff;
+  text-decoration: underline;
+}
 
-  nav a:hover {
-    color: #80b3ff;
-    text-decoration: underline;
-  }
-
+/* === Main Content === */
 main {
   flex: 1;
   width: 90%;
@@ -43,47 +45,46 @@ main {
   background-color: #2c2c2c;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
-  margin-bottom: 100px;
 }
 
-  h1, h2, h3 {
-    color: #fff;
-  }
+h1, h2, h3 {
+  color: #fff;
+}
 
-  a {
-    color: #80b3ff;
-    text-decoration: none;
-  }
+/* === Link Styles === */
+a {
+  color: #80b3ff;
+  text-decoration: none;
+}
 
-  a:hover {
-    text-decoration: underline;
-  }
+a:hover {
+  text-decoration: underline;
+}
 
-  li a {
-    font-size: 1.2rem;
-  }
-
-  .category-link {
-  color: #d98041; /* 橘黃色 */
+/* === Category Tag === */
+.category-link {
+  color: #d98041;
   font-weight: bold;
   margin-right: 0.5rem;
   text-decoration: none;
 }
 
 .category-link:hover {
+  color: #bdce4e;
   text-decoration: underline;
-  color: #bdce4e; /* 淺一點的橘色 */
 }
 
+/* === Blockquote === */
 blockquote {
-  border-left: 4px solid #666;         /* 簡單黑灰色邊線 */
-  padding-left: 1rem;                  /* 左縮排 */
-  margin: 1rem 0;                      /* 垂直間距 */
-  background: none;                    /* 取消背景色 */
-  color: #ccc;                         /* 字體偏淺灰 */
-  font-style: normal;                 /* 不強制斜體，保留自然語氣 */
+  border-left: 4px solid #666;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #ccc;
+  font-style: normal;
   font-size: 0.95rem;
 }
+
+/* === Footer or Copyright === */
 .copyright-block {
   background-color: #1e1e1e;
   color: #bbb;
@@ -94,11 +95,143 @@ blockquote {
   font-size: 0.9rem;
   line-height: 1.5;
 }
+
 .copyright-block a {
   color: #80b3ff;
   text-decoration: underline;
 }
 
+/* === Back Button & Post Navigation === */
+.back-home {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #fffdfd;
+  text-decoration: none;
+}
+/* === Back Button & Post Navigation === */
+.post-nav {
+  margin-top: 2rem;
+  display: flex; /* 啟用 Flexbox */
+  justify-content: flex-start; /* 預設所有內容靠左對齊 */
+  align-items: center; /* 垂直居中對齊（如果連結高度不同） */
+  font-size: 1rem;
+  width: 100%; /* 確保佔滿可用寬度 */
+}
+
+/* 讓下一篇連結永遠靠右 */
+.post-nav .next-post {
+  margin-left: auto; /* 將此元素推到最右邊 */
+}
+/* === Code Block（區塊） === */
+.code-wrapper {
+  position: relative;
+  /* 這是主要程式碼區塊的背景顏色 */
+  background-color: #1e1e1e; /* 這個顏色應該是你的程式碼區塊唯一的背景色 */
+  color: #f8f8f2; /* 程式碼文字顏色 */
+  font-family: "Cascadia Code", Consolas, monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border-radius: 6px;
+  padding: 1rem; /* 整個區塊的內邊距 */
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+
+.code-wrapper pre {
+  background-color: transparent !important; /* 強制背景透明 */
+  padding: 0 !important; /* 強制移除內邊距 */
+  margin: 0 !important; /* 強制移除外邊距 */
+  display: block;
+  white-space: pre;
+  line-height: 1.5;
+}
+
+.code-wrapper pre code {
+  background-color: transparent !important; /* 強制背景透明 */
+  padding: 0 !important; /* 強制移除內邊距 */
+  display: block;
+  white-space: pre;
+  line-height: 1.5;
+}
+
+/* 處理空的或只有換行符的 code 標籤 */
+.code-wrapper pre code:empty,
+.code-wrapper pre code:has(br:only-child) {
+  display: none;
+}
+
+/* === Code Inline（行內程式碼） === */
+/* 這部分是針對文章內容中穿插的 `code` 標籤 */
+code {
+  background-color: #464242; /* 行內程式碼的背景色 */
+  color: #f8f8f2;
+  font-family: "Cascadia Code", Consolas, monospace;
+  font-size: 0.95rem;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+/* 如果你的語法高亮工具會在 `pre` 內部生成 `.highlight` 或 `.chroma` 類的元素，
+   這些規則非常重要，它們會強制其背景透明。 */
+.highlight, .chroma {
+  background: transparent !important; /* 強制背景透明 */
+  padding: 0 !important; /* 強制移除內邊距 */
+  margin: 0 !important; /* 強制移除外邊距 */
+  box-shadow: none !important; /* 強制移除陰影 */
+}
+
+/* === Copy Button（複製按鈕） === */
+.copy-btn {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  background: #007acc; /* 按鈕背景色 */
+  color: white; /* 按鈕文字顏色 */
+  border: none;
+  padding: 0.2em 0.6em;
+  font-size: 0.8em;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.7;
+  z-index: 10;
+  transition: opacity 0.2s ease;
+}
+
+.copy-btn:hover {
+  opacity: 1;
+}
+
+/* === TOC 區塊 === */
+.toc a {
+  color: #80b3ff;
+  text-decoration: none;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+.toc ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.toc ul ul {
+  padding-left: 1.5rem;
+}
+
+/* === Image === */
+.content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 4px;
+}
+
+/* === Responsive === */
 @media (max-width: 600px) {
   main {
     width: 95%;
@@ -118,26 +251,4 @@ blockquote {
     font-size: 0.75rem;
     padding: 0.5rem;
   }
-}
-/* 📋 目錄區塊統一樣式 */
-.toc a {
-  color: #80b3ff; /* 藍色 */
-  text-decoration: none;
-}
-.toc a:hover {
-  text-decoration: underline;
-}
-
-/* 統一用實心圓 + 縮排 */
-.toc ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-}
-
-.toc ul ul {
-  padding-left: 1.5rem;
-}
-
-.toc ul ul ul {
-  padding-left: 1.5rem;
 }

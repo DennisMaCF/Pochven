@@ -25,7 +25,6 @@ categories: ["Thoughts"]
 
 最後則是好為人師的我希望可以分享給後來者一些經驗
 
----
 
 ## 為何叫做Pochven?
 Pochven這個名稱來源於遊戲：EVE online 中的一個特殊區域，這個取名創意借鑑了[Halforst's Field|冰霜之地](https://halfrost.com/)  
@@ -33,7 +32,9 @@ Pochven這個名稱來源於遊戲：EVE online 中的一個特殊區域，這�
 
 未來會在這裡發佈我的學習筆記 生活紀錄 還有一些廢話們  
 
-目標週更！  
+目標月更！  
+
+---
 
 ## About Pochven
 有關Pochven使用之技術：  
