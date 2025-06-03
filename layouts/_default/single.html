@@ -26,6 +26,8 @@
   {{ .Content }}
 </div>
 
+{{ partial "copyright.html" . }}
+
 <nav class="post-nav">
   {{ with .Prev }}
     {{ if eq .Type "posts" }}
@@ -38,5 +40,4 @@
   {{ end }}
 </nav>
 
-{{ partial "copyright.html" . }}
 {{ end }}
