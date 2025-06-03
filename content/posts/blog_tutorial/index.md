@@ -124,7 +124,7 @@ git branch -M main
 git remote add origin https://github.com/DennisMaCF/my-blog.git
 git push -u origin main
 ```
-> 在設定完git push -u origin main後，之後每次推送到遠端只需要輸入: git push 即可  
+> 在設定完 `git push -u origin main` 後，之後每次推送到遠端只需要輸入: `git push` 即可  
 
 這將會提交變更、設定預設分支與遠端，推送到 GitHub  
 你可以到Github上看是否推送成功，大概會變成這樣  
