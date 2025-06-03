@@ -86,7 +86,7 @@ theme = "hugo-paper"
 hugo server
 ```
 這會啟動本地預覽伺服器，自動監控內容變動並重新載入頁面  
-訪問http://localhost:1313，即可看到Blog首頁: 
+訪問 `http://localhost:1313` ，即可看到Blog首頁: 
 ![](new_blog_preview.jpg)  
 
 #### (6) 準備部署
