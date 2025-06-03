@@ -6,7 +6,7 @@
 ## 📖目錄
 
 # CS
-- [使用Hugo + Netlify快速搭建個人Blog](content/posts/blog_tutorial)
+- [使用Hugo + Netlify快速搭建個人Blog](content/posts/blog_tutorial/index.md)
 
 # EE
 
