@@ -187,7 +187,8 @@ Markdown 是一種輕量的純文字語法，基本上只要學會幾個符號�
 ```
 
 常用的標記符號也就幾個，幾分鐘就能上手。具體可以通過這兩篇學習:  
-(1) [少数派：认识与入门 Markdown](https://sspai.com/post/25137)(2) [什麼是MarkDown - HackMD](https://hackmd.io/@eMP9zQQ0Qt6I8Uqp2Vqy6w/SyiOheL5N/%2FzMIQV80gSiGGkKk1sa8HZA)  
+1. [少数派：认识与入门 Markdown](https://sspai.com/post/25137) 
+2. [什麼是MarkDown - HackMD](https://hackmd.io/@eMP9zQQ0Qt6I8Uqp2Vqy6w/SyiOheL5N/%2FzMIQV80gSiGGkKk1sa8HZA)  
 
 最棒的是，Markdown 可以直接被 Hugo 編譯成網頁，用 GitHub 管理版本，用 Netlify 一鍵上線，一整套流程乾淨又高效，對沒有基礎的小白們來說，非常容易上手。
 
