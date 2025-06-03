@@ -133,9 +133,9 @@ git push -u origin main
 
 ### 3. 配置 Netlify
 
-(1) 訪問[Netlify](https://www.netlify.com/)，直接使用Githun帳號註冊並登入
+#### (1) 訪問[Netlify](https://www.netlify.com/)，直接使用Githun帳號註冊並登入
 
-(2) 點擊 Add new project -> import an existing project -> 選擇從 Github 導入專案 -> 填入專案設定如下:  
+#### (2) 點擊 Add new project -> import an existing project -> 選擇從 Github 導入專案 -> 填入專案設定如下:  
 
 ![](import_project.png)
 
@@ -144,10 +144,10 @@ git push -u origin main
 ![](settings.png)
 ![](environment_variables.png)
 
-(3) 等待專案首次構建完成:  
+#### (3) 等待專案首次構建完成:  
 
 ![](url.png)
-(4) 點擊劃線部分，便可以使用 Netlify 提供的唯一 `project_name.netlify.app` 鏈接來訪問Blog網站了！  
+#### (4) 點擊劃線部分，便可以使用 Netlify 提供的唯一 `project_name.netlify.app` 鏈接來訪問Blog網站了！  
 
 
 #### Netlify 常用功能說明:  
@@ -161,3 +161,38 @@ git push -u origin main
 ![](domain.png)
 
 ### 4. 申請獨立域名
+
+> 為何要有獨立域名？獨立的域名是網路上象徵著你個人的符號。相比於Netlify的`netlify.app`，個性化的域名更有個人色彩，便於記憶與分享。
+另一方面，域名是一個方便的定位器，當我們想要從Netlify遷移到其他平台部署時，只需要修改指向，而不需要重新保存一個新連結。  
+-- 節錄自[【程序员】使用 Netlify + Jekyll 快速搭建个人博客](https://imageslr.com/2023/jekyll-netlify#%E4%BA%94%E7%94%B3%E8%AF%B7%E7%8B%AC%E7%AB%8B%E5%9F%9F%E5%90%8D) 
+
+申請域名只需要選擇一個服務商，並搜索喜歡的域名註冊情形，是否被註冊、付費。知名的有GoDaddy, Namecheap。
+域名付費一般以年為單位。
+域名註冊完成後，可以在 Netlify 中的 Domain management 來指向自己的Blog。 
+
+---
+
+## 補充： 使用 Markdown 編寫內容
+
+### Markwon 是什麼？為何選擇它？
+
+在開始寫 Blog 前，我猶豫了很久該用什麼工具來寫內容。Word？Notion？還是直接用 Google Docs？後來發現，對於想自己架站、又不想學一堆後台系統的我來說，Markdown 簡直是救星。
+
+Markdown 是一種輕量的純文字語法，基本上只要學會幾個符號，就能把標題、列表、程式碼塊、超連結標起來。例如：  
+
+```md
+## 這是一個標題
+- 這是一個項目
+[連結文字](https://example.com)
+```
+
+常用的標記符號也就幾個，幾分鐘就能上手。具體可以通過這兩篇學習:  
+(1) [少数派：认识与入门 Markdown](https://sspai.com/post/25137) (2) [什麼是MarkDown - HackMD](https://hackmd.io/@eMP9zQQ0Qt6I8Uqp2Vqy6w/SyiOheL5N/%2FzMIQV80gSiGGkKk1sa8HZA)
+
+我一開始是用 VS Code 搭配 Markdown Preview 來寫，但圖片貼起來有點麻煩。後來改用 Typora，幾乎可以做到 WYSIWYG（所見即所得），寫起來跟打 Word 沒兩樣，甚至更快。
+
+最棒的是，Markdown 可以直接被 Hugo 編譯成網頁，用 GitHub 管理版本，用 Netlify 一鍵上線，一整套流程乾淨又高效，對沒有基礎的小白們來說，非常容易上手。
+
+## 結語
+在我看來，搭建Blog是簡單的，但是持續輸出才是難點。這是我的第二篇Blog，花了我近一天的時間完成，可見其費時。
+最後，希望與大家一起進步，共勉之！
