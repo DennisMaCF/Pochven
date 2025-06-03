@@ -6,9 +6,9 @@
 ## 📖目錄
 
 # CS
-- [使用Hugo + Netlify快速搭建個人Blog](https://pochven.netlify.app/posts/blog_tutorial)
+- [使用Hugo + Netlify快速搭建個人Blog](https://github.com/DennisMaCF/Pochven/content/posts/blog_tutorial)
 
 # EE
 
 # 隨筆心得
-- [第一篇Blog](https://pochven.netlify.app/posts/first_post.md)
+- [第一篇Blog](https://github.com/DennisMaCF/Pochven/content/posts/first_post.md)
