@@ -128,13 +128,13 @@ git push -u origin main
 > 在設定完 `git push -u origin main` 後，之後每次推送到遠端只需要輸入: `git push` 即可  
 
 這將會提交變更、設定預設分支與遠端，推送到 GitHub  
-你可以到Github上看是否推送成功，大概會變成這樣  
+你可以到Github上看是否推送成功
 完成以上步驟後  
 恭喜你，你的本地專案已經成功綁定遠端倉庫了！  
 
 ### 3. 配置 Netlify
 
-#### (1) 訪問[Netlify](https://www.netlify.com/)，直接使用Githun帳號註冊並登入
+#### (1) 訪問[Netlify](https://www.netlify.com/)，直接使用Github帳號註冊並登入
 
 #### (2) 點擊 Add new project -> import an existing project -> 選擇從 Github 導入專案 -> 填入專案設定如下:  
 
