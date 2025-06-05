@@ -111,8 +111,9 @@ Repository Name: 建議為本地資料夾名稱
 
 #### (2) 推送本地專案到Github  
 
-在Github中找到HTTPS網址並複製，可能像這樣:https://github.com/DennisMaCF/my-blog.git  
-請先確認你的terminal中所在資料夾，如果不是你的倉庫名稱，請在terminal中輸入:
+在Github中找到HTTPS網址並複製，可能像這樣:  
+`https://github.com/DennisMaCF/my-blog.git` 
+然後回到`vscode`，先確認你的terminal中所在資料夾，如果不是你的倉庫名稱，請在terminal中輸入:
 ```bash
 cd 你的專案名稱
 ```
