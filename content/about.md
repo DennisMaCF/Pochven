@@ -3,7 +3,7 @@ title: About
 layout: "about"
 ---
 
-## [GITHUB LINK](https://pochven.netlify.app/)
+## [GITHUB LINK](https://github.com/DennisMaCF/Pochven.git)
 ## 這個網站是 Dennis 的個人技術與生活 Blog，分享 CS/EE 筆記、心得與創作！  
 
 ### 授權聲明:
